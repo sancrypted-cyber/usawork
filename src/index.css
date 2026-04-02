@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/evolventa');
+@import "tailwindcss";
+
+@theme {
+  --font-ans: "Evolventa", sans-serif;
+  
+  --animate-spin-slow: spin 8s linear infinite;
+  --animate-pulse-subtle: pulse-subtle 3s ease-in-out infinite;
+
+  @keyframes pulse-subtle {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+  }
+
+  @keyframes draw-trail {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    10% { opacity: 0.3; }
+    90% { opacity: 0.3; }
+    100% { stroke-dashoffset: 0; opacity: 0; }
+  }
+
+  @keyframes fly {
+    0% { offset-distance: 0%; opacity: 0; }
+    5% { opacity: 1; }
+    95% { opacity: 1; }
+    100% { offset-distance: 100%; opacity: 0; }
+  }
+}
+
+@layer base {
+  :root {
+    font-family: var(--font-ans);
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  #root {
+    width: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
