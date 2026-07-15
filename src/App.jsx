@@ -26,7 +26,7 @@ function App() {
       {/* Content Section */}
       <div className="mt-14 text-center max-w-2xl z-10">
         <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6 animate-fade-in">
-          Complete simple tasks and earn <span className="text-[#0088cc]">$50+</span> per result.
+          Complete simple tasks and earn <span className="text-[#0088cc]">£50+</span> per result.
         </h1>
         
         <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-xl mx-auto leading-relaxed animate-fade-in [animation-delay:200ms]">
